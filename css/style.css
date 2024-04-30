@@ -1,4 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(120deg, #000000, #479e96, #308078);
+    height: 953px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+}
+
 .header {
+    background-color: #479e95;
     width: 1440px;
     height: 200px;
     margin: 0 auto;
@@ -9,7 +21,9 @@
 }
 
 .header-title {
+    color: #000000bd;
     font-size: 60px;
+    font-weight: 600;
 }
 
 .menu {
@@ -18,7 +32,6 @@
 }
 
 .nav-list {
-    background-color: #c1c1c1;
     width: 400px;
     height: 80px;
     display: flex;
@@ -28,17 +41,25 @@
 }
 
 .nav-list li {
-    background-color: #707070;
-    width: 125px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 140px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.nav-list li a {
+    color: #ffffffa1;
 }
 
 .main {
+    background: #00000080;
+    color: #ffffff80;
     width: 1440px;
-    height: 739px;
+    height: 753px;
     margin: 0 auto;
     padding: 0 40px;
     display: flex;
@@ -49,14 +70,16 @@
     gap: 35px;
 }
 
+.main h1 {
+    font-weight: 600;
+}
+
 .main-container-infos {
-    background-color: #95a283;
     display: flex;
     align-items: center;
 }
 
 .main-container-infos p {
-    background-color: #678e5b;
     width: 680px;
     height: 300px;
     padding: 0 10px;
@@ -65,7 +88,7 @@
     align-items: center;
     font-size: 40px;
     letter-spacing: 3px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .main-container-images {
@@ -78,11 +101,16 @@
 }
 
 .main-container-images span {
-    background-color: #47892a;
     width: 213px;
     height: 500px;
+    border-radius: 5px;
 }
 
 #mobile-img {
     display: none;
+    border-radius: 5px;
+}
+
+#main-img {
+    border-radius: 5px;
 }
